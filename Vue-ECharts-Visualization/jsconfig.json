@@ -4,5 +4,6 @@
       "@/*": ["./src/*"]
     }
   },
+  "allowJs": true,
   "exclude": ["node_modules", "dist"]
 }
