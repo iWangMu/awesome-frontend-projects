@@ -1,18 +1,26 @@
 <script>
   import ChartCard from '../base/ChartCard.vue';
+  import BarChart from '../views/BarChart.vue';
   export default {
     components: {
       ChartCard,
+      BarChart,
     },
   };
 </script>
 <template>
   <section>
     <div class="chartsView">
-      <ChartCard>123</ChartCard>
+      <ChartCard><BarChart></BarChart></ChartCard>
+      <ChartCard><BarChart></BarChart></ChartCard>
+      <ChartCard><BarChart></BarChart></ChartCard>
     </div>
     <div class="chartsView">456</div>
-    <div class="chartsView">789</div>
+    <div class="chartsView">
+      <ChartCard><BarChart></BarChart></ChartCard>
+      <ChartCard><BarChart></BarChart></ChartCard>
+      <ChartCard><BarChart></BarChart></ChartCard>
+    </div>
   </section>
 </template>
 <style scoped>
