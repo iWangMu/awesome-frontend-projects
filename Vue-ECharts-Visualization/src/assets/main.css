@@ -1,3 +1,7 @@
+@font-face {
+  font-family: electronicFont;
+  src: url(../static/font/DS-DIGIT.TTF);
+}
 * {
   box-sizing: border-box;
   margin: 0;
