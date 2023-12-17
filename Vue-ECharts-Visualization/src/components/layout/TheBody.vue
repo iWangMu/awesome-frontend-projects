@@ -1,12 +1,16 @@
 <script>
   import ChartCard from '../base/ChartCard.vue';
   import BarChart from '../views/BarChart.vue';
+  import Bar2Chart from '@/components/views/Bar2Chart.vue';
+  import Line1Chart from '@/components/views/Line1Chart.vue';
   import NumberChart from '@/components/views/NumberChart.vue';
   import MapChart from '@/components/views/MapChart.vue';
   export default {
     components: {
       ChartCard,
       BarChart,
+      Bar2Chart,
+      Line1Chart,
       NumberChart,
       MapChart,
     },
@@ -16,7 +20,7 @@
   <section>
     <div class="chartsView">
       <ChartCard><BarChart></BarChart></ChartCard>
-      <ChartCard></ChartCard>
+      <ChartCard><Line1Chart></Line1Chart></ChartCard>
       <ChartCard></ChartCard>
     </div>
     <div class="chartsView">
@@ -24,7 +28,7 @@
       <MapChart></MapChart>
     </div>
     <div class="chartsView">
-      <ChartCard></ChartCard>
+      <ChartCard><Bar2Chart></Bar2Chart></ChartCard>
       <ChartCard></ChartCard>
       <ChartCard></ChartCard>
     </div>
